@@ -1,0 +1,41 @@
+﻿@model Mvc_Crud_Op.Models.Employe_Info
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center fw-bold text-primary">Create Employe</h2>
+                 </div>
+                 <div class="card-body">
+                   <form method="post" asp-action="create">
+                      <div class="form-group">
+                          <label class="fw-bold">Name</label>
+                          <input type="text" asp-for="Name" class="form-control" placeholder="Enter Employe Name" />
+                      </div>
+                      <div class="form-group mt-2">
+                          <label class="fw-bold">Address</label>
+                          <input type="text" asp-for="Name" class="form-control" placeholder="Enter Employe Address" />
+                      </div>
+                      <div class="form-group mt-2">
+                          <label class="fw-bold">Mobile Number</label>
+                          <input type="text" asp-for="Mobile_No" class="form-control" placeholder="Enter Employe Mobile Number" />
+                      </div>
+                      <div class="form-group mt-2">
+                          <label class="fw-bold">Salary</label>
+                          <input type="text" asp-for="Salary" class="form-control" placeholder="Enter Employe Salary" />
+                      </div>
+                     <div class="form-group mt-2">
+                         <input type="submit" value="SUBMIT" class="btn btn-sm btn-outline-danger float-right font-monospace fw-bold"/>
+                      </div>
+                   </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

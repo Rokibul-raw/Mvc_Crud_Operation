@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Mvc_Crud_Op.Models.Employe_Info>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2"> 
+            <h1 class="text-center text-success fw-bold">Employe List</h1>
+            <a class="btn btn-sm btn-primary m-2" asp-controller="Employe" asp-action="Create">Create</a>
+            <table class="table table-bordered mt-3">
+                <tr class="text-center">
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile Number</th>
+                    <th>Salary</th>
+                    
+                </tr>
+                @foreach (var item in Model)
+                {
+                  <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Address</td>
+                    <td>@item.Mobile_No</td>
+                    <td>@item.Salary</td>
+                </tr>  
+                }
+                
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
