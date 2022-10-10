@@ -10,23 +10,32 @@
             <a class="btn btn-sm btn-primary m-2" asp-controller="Employe" asp-action="Create">Create</a>
             <table class="table table-bordered mt-3">
                 <tr class="text-center">
+                    <th>Id</th>
                     <th>Name</th>
                     <th>Address</th>
                     <th>Mobile Number</th>
                     <th>Salary</th>
+                    <th class="">Action</th>
                     
                 </tr>
                 @foreach (var item in Model)
                 {
                   <tr>
+                      <td>@item.Id</td>
                     <td>@item.Name</td>
                     <td>@item.Address</td>
                     <td>@item.Mobile_No</td>
                     <td>@item.Salary</td>
+                    <td>
+                        <a class="btn btn-sm btn-warning m-1" asp-controller="Employe" asp-action="Edit"asp-route-id="@item.Id">Edit</a>
+                        <a class="btn btn-sm btn-danger m-1" asp-controller="Employe" asp-action="Delete"asp-route-id="@item.Id">Delete</a>
+                     </td>
                 </tr>  
                 }
                 
             </table>
+            <p class=" text-center text-secondary fw-bold">@TempData["Error"]</p>
+            <p class=" text-center text-danger fw-bold">@TempData["Delete"]</p>
         </div>
 
     </div>
