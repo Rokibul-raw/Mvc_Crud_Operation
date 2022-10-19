@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Mvc_Crud_Op.Data;
 
@@ -10,9 +11,10 @@ using Mvc_Crud_Op.Data;
 namespace Mvc_Crud_Op.Migrations
 {
     [DbContext(typeof(EmployeDbContext))]
-    partial class EmployeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221014145404_initImage")]
+    partial class initImage
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

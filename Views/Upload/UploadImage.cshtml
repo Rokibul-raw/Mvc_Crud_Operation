@@ -1,0 +1,29 @@
+﻿@model Mvc_Crud_Op.Models.ViewImage.ImageModel
+@{
+    ViewData["Title"] = "UploadImage";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <form method="post" asp-action="UploadImage" enctype="multipart/form-data">
+               <div class="form-group mt-2">
+                   <label asp-for="Name"></label>
+                   <input type="text" asp-for="Name" class="form-control" placeholder=" Enter Name" />
+                   <span class="text-danger" asp-validation-for="Name"></span>
+               </div> 
+                <div class="form-group mt-2">
+                   <label asp-for="ImgPath"></label>
+                   <input type="file" asp-for="ImgPath" class="form-control" />
+                    <span class="text-danger" asp-validation-for="ImgPath"></span>
+               </div> 
+
+                <div class="form-group">
+                  
+                   <input type="submit"  class="btn btn-sm btn-danger float-end mt-3" />
+               </div> 
+
+            </form>
+        </div>
+    </div>
+</div>
+

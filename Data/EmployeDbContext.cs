@@ -10,6 +10,7 @@ namespace Mvc_Crud_Op.Data
 
         }
         public DbSet<Employe_Info> Employe_Infos { get; set; }
+        public DbSet<UplodImage> uplodImages { get; set; }
 
     }
 }

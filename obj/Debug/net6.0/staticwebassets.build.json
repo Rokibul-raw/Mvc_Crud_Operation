@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gFChwZ+Bxctiv/Z//P6300n4kmUXb/FGYLJQT4N+P0I=",
+  "Hash": "xj6gdM7MjuODPOOudrH7OaTjnRKH4OTBTUcN/Rq9yxw=",
   "Source": "Mvc_Crud_Op",
   "BasePath": "_content/Mvc_Crud_Op",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Minimal Api\\Mvc_Crud_Op\\Mvc_Crud_Op\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Mvc_Crud_Op.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Minimal Api\\Mvc_Crud_Op\\Mvc_Crud_Op\\wwwroot\\Content\\imageroki.jpg",
+      "SourceId": "Mvc_Crud_Op",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Minimal Api\\Mvc_Crud_Op\\Mvc_Crud_Op\\wwwroot\\",
+      "BasePath": "_content/Mvc_Crud_Op",
+      "RelativePath": "Content/imageroki.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Content\\imageroki.jpg"
     },
     {
       "Identity": "D:\\Minimal Api\\Mvc_Crud_Op\\Mvc_Crud_Op\\wwwroot\\css\\site.css",
